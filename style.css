@@ -1,0 +1,1366 @@
+/*HEADER*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.shadow {
+    position: absolute;
+    background-image: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    top: 0;
+    height: 327px;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    padding-top: 25px;
+}
+
+.header__img {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__img img {
+    margin-right: 80px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+}
+
+.header__img text {
+    font-size: 10px;
+    margin-left: 100px;
+    font-family: "Helvetica Neue Cyr - Thin";
+}
+
+.header_content ul {
+    display: flex;
+    padding-top: 25px;
+}
+
+.header_content ul li {
+    list-style-type: none;
+    color: #363636;
+}
+
+.header_content ul li a {/******/
+    text-decoration: none;
+    font-family: "Helvetica Neue Cyr - Thin";
+    color: #898989;
+    margin-right: 45px;
+}
+
+.header_content ul li a:hover {
+    text-decoration-color: green;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #78b660;
+}
+
+.header_content ul li img[src ="svg/main.png"] {
+    position: relative;
+    bottom: 5px;
+    right: 45px;
+}
+
+.header_content_lightgreen {
+    position: absolute;
+    top: 10vh;
+    left: 43.2vw;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.services_arrow:hover .header_content_lightgreen {
+    visibility: visible;
+}
+
+.header_content_lightgreen ul {
+    position: relative;
+    display: block;
+    line-height: 26px;
+    font-family: "Helvetica Neue Cyr - Light";
+    bottom: 29.5vh;
+    font-size: 14px;
+    list-style-type: none;
+    font-weight: 300;
+}
+
+.header_content_lightgreen ul li text {
+    cursor: pointer;
+}
+
+.header_content_lightgreen ul li:first-child:hover {
+    background-color: #f2f2f2;
+}
+
+.header_content_lightgreen ul li:first-child:hover img {
+    visibility: visible;
+}
+
+.header_content_lightgreen ul li:nth-child(2):hover {
+    background-color: #f2f2f2;
+}
+
+.header_content_lightgreen ul li:nth-child(2):hover img {
+    visibility: visible;
+}
+
+.header_content_lightgreen ul li:nth-child(3):hover {
+    background-color: #f2f2f2;
+}
+
+.header_content_lightgreen ul li:nth-child(3):hover img {
+    visibility: visible;
+}
+
+.header_content_lightgreen ul li:nth-child(4):hover {
+    background-color: #f2f2f2;
+}
+
+.header_content_lightgreen ul li:nth-child(4):hover img {
+    visibility: visible;
+}
+
+.header_content_lightgreen ul li:nth-child(5):hover {
+    background-color: #f2f2f2;
+}
+
+.header_content_lightgreen ul li:nth-child(5):hover img {
+    visibility: visible;
+}
+
+.header_content_lightgreen ul li:nth-child(6):hover {
+    background-color: #f2f2f2;
+}
+
+.header_content_lightgreen ul li:nth-child(6):hover img {
+    visibility: visible;
+}
+
+.header_content_lightgreen ul li:last-child:hover {
+    background-color: #f2f2f2;
+}
+
+.header_content_lightgreen ul li:last-child:hover img {
+    visibility: visible;
+}
+
+.header_content_lightgreen ul:first-of-type li text {
+    margin-left: 1.5vw;
+}
+
+.header_content_lightgreen ul li img {
+    position: relative;
+    top: 0.2vh;
+    visibility: hidden;
+}
+
+img[alt="arrow_lightgreen_1"] {/**/
+    left: 7.4vw;
+}
+
+img[alt="arrow_lightgreen_2"] {
+    left: 4.8vw;
+}
+
+img[alt="arrow_lightgreen_3"] {
+    left: 2.5vw;
+}
+
+img[alt="arrow_lightgreen_4"] {
+    left: 8vw;
+}
+
+img[alt="arrow_lightgreen_5"] {
+    left: 8.6vw;
+}
+
+img[alt="arrow_lightgreen_6"] {
+    left: 8.4vw;
+}
+
+img[alt="arrow_lightgreen_7"] {
+    left: 9.5vw;
+}
+
+.header_content_lightgrey {
+    position: absolute;
+    left: 17.3vw;
+    top: 1.7vh;
+    visibility: hidden;
+}
+
+.dermatooncology:hover .header_content_lightgrey {
+    visibility: visible;
+}
+
+.header_content_lightgrey ul {
+    list-style-type: none;
+    font-family: "Helvetica Neue Cyr - Light";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 26px;
+    bottom: 29.8vh;
+}
+
+.header_content_lightgrey ul li {
+    background-color: transparent !important;
+}
+
+.header_content_lightgrey ul li text {
+    cursor: pointer;  
+}
+
+.header_content_lightgrey ul li text:hover {
+    border-bottom: 2px solid #78b660;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: 45px;
+    padding-right: 3vw;
+}
+
+.contact text:first-of-type {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-family: "Helvetica Neue Cyr - Roman";
+}
+
+.contact text:last-of-type {
+    font-size: 18px;
+    font-family: "Helvetica Neue Cyr - Thin";
+}
+
+header img[src ="svg/flower_header.svg"] {
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+@media (max-width: 1200px) {
+    .header__img img {
+        margin-right: 55px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+    }
+
+    .header__img text {
+        margin-left: 70px;
+    }
+
+    .header_content ul li a {
+        text-decoration: none;
+        margin-right: 25px;
+    }
+
+    .header_content ul li img[src ="svg/main.png"] {
+        position: relative;
+        bottom: 5px;
+        right: 25px;
+    }
+
+    .header_content_lightgreen {
+        left: 45vw;
+    }
+
+    img[alt="arrow_lightgreen_1"] {/**/
+        left: 9.2vw;
+    }
+    
+    img[alt="arrow_lightgreen_2"] {
+        left: 6vw;
+    }
+    
+    img[alt="arrow_lightgreen_3"] {
+        left: 3.2vw;
+    }
+    
+    img[alt="arrow_lightgreen_4"] {
+        left: 9.7vw;
+    }
+    
+    img[alt="arrow_lightgreen_5"] {
+        left: 10.6vw;
+    }
+    
+    img[alt="arrow_lightgreen_6"] {
+        left: 10.4vw;
+    }
+    
+    img[alt="arrow_lightgreen_7"] {
+        left: 11.7vw;
+    }
+    
+    .header_content_lightgrey {
+        position: absolute;
+        left: 20.8vw;
+        top: 1.7vh;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__img img {
+        margin-right: 32px;
+        padding-left: 40px;
+        padding-bottom: 10px;
+    }
+
+    .header__img text {
+        font-size: 10px;
+        margin-left: 60px;
+    }
+
+    .header_content ul li a {
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 12px;
+    }
+
+    .header_content ul li img[src ="svg/main.png"] {
+        position: relative;
+        bottom: 4px;
+        right: 22px;
+    }
+
+    .header_content_lightgreen {
+        left: 44vw;
+        transform: scale(0.9);
+        top: 7vh;
+    }
+
+    img[alt="arrow_lightgreen_1"] {
+        left: 11.2vw;
+    }
+    
+    img[alt="arrow_lightgreen_2"] {
+        left: 7.3vw;
+    }
+    
+    img[alt="arrow_lightgreen_3"] {
+        left: 4vw;
+    }
+    
+    img[alt="arrow_lightgreen_4"] {
+        left: 12vw;
+    }
+    
+    img[alt="arrow_lightgreen_5"] {
+        left: 12.9vw;
+    }
+    
+    img[alt="arrow_lightgreen_6"] {
+        left: 12.6vw;
+    }
+    
+    img[alt="arrow_lightgreen_7"] {
+        left: 14.1vw;
+    }
+    
+    .header_content_lightgrey {
+        position: absolute;
+        left: 25vw;
+        top: 1.7vh;
+        visibility: hidden;
+    }
+
+    .contact {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__img img {
+        margin-right: 2px;
+        padding-left: 18px;
+        padding-bottom: 8px;
+        transform: scale(0.8);
+    }
+
+    .header__img text {
+        font-size: 8px;
+        margin-left: 54px;
+    }
+
+    .header_content ul li a {
+        text-decoration: none;
+        margin-right: 8px;
+        font-size: 10px;
+    }
+
+    .header_content ul li img[src ="svg/main.png"] {
+        position: relative;
+        bottom: 3px;
+        right: 10px;
+    }
+
+    .header_content_lightgreen {
+        left: 42vw;
+        transform: scale(0.7);
+        top: 1vh;
+    }
+
+    img[alt="arrow_lightgreen_1"] {
+        left: 15vw;
+    }
+    
+    img[alt="arrow_lightgreen_2"] {
+        left: 10vw;
+    }
+    
+    img[alt="arrow_lightgreen_3"] {
+        left: 5.5vw;
+    }
+    
+    img[alt="arrow_lightgreen_4"] {
+        left: 15.5vw;
+    }
+    
+    img[alt="arrow_lightgreen_5"] {
+        left: 17vw;
+    }
+    
+    img[alt="arrow_lightgreen_6"] {
+        left: 16.5vw;
+    }
+    
+    img[alt="arrow_lightgreen_7"] {
+        left: 18.5vw;
+    }
+    
+    .header_content_lightgrey {
+        position: absolute;
+        left: 32.2vw;
+        top: 1.7vh;
+        visibility: hidden;
+    }
+
+    .contact {
+        margin-left: 18px;
+        padding-top: 1vw;
+    }
+
+    .contact text:first-of-type {
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+    
+    .contact text:last-of-type {
+        font-size: 14px;
+    }
+    
+    header img[src ="svg/flower_header.svg"] {
+        position: absolute;
+        top: 0;
+        right: -4vw;
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 420px) {
+    .header__img {
+        position: relative;
+        right: 22vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__img img {
+        margin-right: -30vw;
+        padding-left: 0;
+        padding-bottom: 0;
+        transform: scale(0.4);
+    }
+
+    .header__img text {
+        padding-left: 22vw;
+        font-size: 6px;
+        margin-left: 20px;
+    }
+
+    .header_content ul li a {
+        position: relative; 
+        right: 15vw;  /****/
+        text-decoration: none;
+        margin-right: 10px;
+        font-size: 8px;
+    }
+
+    .header_content ul li img[src ="svg/main.png"] {
+        position: relative;
+        bottom: 18px;
+        right: 38px;
+    }
+
+    .header_content_lightgreen {
+        left: 25vw;
+        transform: scale(0.4);
+        top: -8vh;
+    }
+
+    img[alt="arrow_lightgreen_1"] {
+        left: 28vw;
+    }
+    
+    img[alt="arrow_lightgreen_2"] {
+        left: 19.3vw;
+    }
+    
+    img[alt="arrow_lightgreen_3"] {
+        left: 11vw;
+    }
+    
+    img[alt="arrow_lightgreen_4"] {
+        left: 30vw;
+    }
+    
+    img[alt="arrow_lightgreen_5"] {
+        left: 32vw;
+    }
+    
+    img[alt="arrow_lightgreen_6"] {
+        left: 31vw;
+    }
+    
+    img[alt="arrow_lightgreen_7"] {
+        left: 35vw;
+    }
+    
+    .header_content_lightgrey {
+        position: absolute;
+        left: 60vw;
+        top: 1.7vh;
+        visibility: hidden;
+    }
+
+    .contact {
+        margin-left: -70px;
+        padding-top: 2vw;
+    }
+
+    .contact text:first-of-type {
+        margin-bottom: 10px;
+        font-size: 6px;
+    }
+    
+    .contact text:last-of-type {
+        font-size: 10px;
+    }
+    
+    header img[src ="svg/flower_header.svg"] {
+        position: absolute;
+        top: -7.5vh;
+        right: -12vw;
+        transform: scale(0.5);
+    }
+
+@media (max-width: 320px) {
+    .header__img {
+        position: relative;
+        right: 22vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header__img img {
+        margin-right: -30vw;
+        padding-left: 0;
+        padding-bottom: 0;
+        transform: scale(0.2);
+    }
+    
+    .header__img text {
+        padding-left: 24vw;
+        font-size: 4px;
+        margin-left: 16px;
+    }
+    
+    .header_content ul li a {
+        position: relative; 
+        right: 16vw;  /****/
+        text-decoration: none;
+        font-size: 6px;
+    }
+
+    .header_content ul li a:hover {
+        text-decoration-color: green;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #78b660;
+    }
+    
+    .header_content ul li img[src ="svg/main.png"] {
+        position: relative;
+        bottom: 18px;
+        right: 34px;
+    }
+
+    .header_content_lightgreen {
+        left: 15vw;
+        transform: scale(0.3);
+        top: -11vh;
+    }
+    
+    img[alt="arrow_lightgreen_1"] {
+        left: 38vw;
+    }
+        
+    img[alt="arrow_lightgreen_2"] {
+        left: 26vw;
+    }
+        
+    img[alt="arrow_lightgreen_3"] {
+        left: 15.5vw;
+    }
+        
+    img[alt="arrow_lightgreen_4"] {
+        left: 40vw;
+    }
+        
+    img[alt="arrow_lightgreen_5"] {
+        left: 43vw;
+    }
+        
+    img[alt="arrow_lightgreen_6"] {
+        left: 41vw;
+    }
+        
+    img[alt="arrow_lightgreen_7"] {
+        left: 46vw;
+    }
+        
+    .header_content_lightgrey {
+        position: absolute;
+        left: 78vw;
+        top: 1.7vh;
+        visibility: hidden;
+    }
+    
+    .contact {
+        margin-left: -50px;
+        padding-top: 5vw;
+    }
+    
+    .contact text:first-of-type {
+        margin-bottom: 6px;
+        font-size: 4px;
+    }
+        
+    .contact text:last-of-type {
+        font-size: 6px;
+    }
+        
+    header img[src ="svg/flower_header.svg"] {
+        position: absolute;
+        top: 0;
+        right: -14vw;
+        transform: scale(0.2);
+    }
+}
+}
+
+/*CONTENT*/
+
+.slide-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 95px;
+}
+
+#headerSlider.owl-carousel .owl-stage-outer {
+    overflow: visible;
+    height: 82vh;/***/
+}
+
+.owl-carousel content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_important {
+    display: flex;
+    position: relative;
+    top: 11vh;
+    left: 14vw;
+}
+
+.content_important img {
+    position: absolute;
+    bottom: 37.5vh;
+    right: 35px;
+}
+
+img[src ="svg/Left.svg"] {
+    position: relative;
+    bottom: 16vh;
+    left: 0.5vw;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    margin: 4vh -25.5vw 4vh 1.5vw;
+}
+
+.text_content text:first-of-type {
+    font-family: "Helvetica Neue Cyr - Bold";
+    color: #363636;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.text_content text:nth-child(2) {
+    line-height: 1.5;
+}
+
+.text_content text:nth-child(2),
+.text_content text:last-of-type {
+    width: 361px;
+    font-family: "Helvetica Neue Cyr - Thin";
+    color: #363636;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.text_content text:last-of-type b {
+    vertical-align: top;
+    color: #92c47f;
+    font-size: 42px;
+}
+
+.text_content img[src ="svg/Цветок.svg"] {
+    position: absolute;
+    transform: scale(10.5);
+    top: 48vh;
+    right: 6px;
+    left: 15vw;
+}
+
+img[src ="svg/Right.svg"] {
+    position: relative;
+    bottom: 16vh;
+    left: 24.2vw;
+}
+
+.woman {
+    position: relative;
+    top: 7vh;
+    right: 7vw;
+    z-index: -1;
+}
+
+.shape {
+    position: absolute;
+    top: 61vh;
+    left: 16vw;
+    z-index: 1;
+}
+
+.shape img {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #e4e4e3;
+    margin-right: 5px;
+}
+
+img[alt="Grey_shape1"]:active {
+    background-color: #a5ca6e;
+}
+
+img[alt="Grey_shape2"]:active {
+    background-color: #a5ca6e;
+}
+
+img[alt="Grey_shape3"]:active {
+    background-color: #a5ca6e;
+}
+
+@media (max-width: 1200px) {
+    .slide-wrapper {
+        position: relative;
+        width: 105vw;
+        overflow: hidden;
+        padding-bottom: 95px;
+        right: 4vw;
+    }
+    
+    #headerSlider.owl-carousel .owl-stage-outer {
+        overflow: visible;
+        height: 85vh;/***/
+    }
+    
+    .content_important img {
+        position: absolute;
+        bottom: 37.5vh;
+        right: 35px;
+    }
+    
+    img[src ="svg/Left.svg"] {
+        position: relative;
+        bottom: 16vh;
+        left: 0.5vw;
+    }
+    
+    .text_content img[src ="svg/Цветок.svg"] {
+        position: absolute;
+        transform: scale(6);/***/
+        top: 46vh;
+        right: 5.5px;
+        left: 15vw;
+    }
+
+    img[src ="svg/Right.svg"] {
+        position: relative;
+        transform: scale(0.999);
+        bottom: 16vh;
+        left: 24.2vw;
+    }
+
+    .woman {
+        position: relative;
+        top: 7vh;
+        right: 8vw;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 992px) {
+    .slide-wrapper {
+        position: relative;
+        width: 105vw;
+        overflow: hidden;
+        padding-bottom: 95px;
+        right: 8.5vw;/****/
+    }
+    
+    #headerSlider.owl-carousel .owl-stage-outer {
+        overflow: visible;
+        height: 75vh;/***/
+    }
+    
+    .content_important img {
+        position: absolute;
+        bottom: 37.5vh;
+        right: 35px;
+        transform: scale(0.8);
+    }
+    
+    img[src ="svg/Left.svg"] {
+        position: relative;
+        bottom: 17.5vh;
+        left: 0.5vw;
+    }
+
+    .text_content {
+        display: flex;
+        flex-direction: column;
+        margin: 4vh -25.5vw 4vh 1.5vw;
+    }
+    
+    .text_content text:first-of-type {
+        font-family: "Helvetica Neue Cyr - Bold";
+        color: #363636;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: left;
+        line-height: 1.8;
+    }
+    
+    .text_content text:nth-child(2) {
+        line-height: 1.5;
+    }
+    
+    .text_content text:nth-child(2),
+    .text_content text:last-of-type {
+        width: 361px;
+        font-family: "Helvetica Neue Cyr - Thin";
+        color: #363636;
+        font-size: 21px;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .text_content text:last-of-type b {
+        vertical-align: top;
+        color: #92c47f;
+        font-size: 40px;
+    }
+    
+    .text_content img[src ="svg/Цветок.svg"] {
+        position: absolute;
+        transform: scale(3.5);/***/
+        top: 37vh;
+        right: 0;
+        left: 17vw;
+    }
+
+    img[src ="svg/Right.svg"] {
+        position: relative;
+        transform: scale(0.8);
+        bottom: 17.5vh;
+        left: 22vw;
+    }
+
+    .woman {
+        position: relative;
+        transform: scale(0.85);
+        top: 7vh;
+        left: 2vw;
+        right: 5vw;
+        z-index: -1;
+    }
+
+    .shape {
+        position: absolute;
+        top: 56vh;
+        left: 21vw;
+        z-index: 1;
+    }
+    
+    .shape img {
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: #e4e4e3;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-wrapper {
+        position: relative;
+        width: 108vw;
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+    
+    #headerSlider.owl-carousel .owl-stage-outer {
+        overflow: visible;
+        height: 60vh;
+    }
+
+    .content_important {
+        display: flex;
+        position: relative;
+        top: 5vh;
+        left: 18vw;
+    }
+    
+    .content_important img {
+        position: absolute;
+        bottom: 37.5vh;
+        right: 35px;
+    }
+    
+    img[src ="svg/Left.svg"] {
+        position: relative;
+        transform: scale(0.7);
+        bottom: 18.5vh;
+        left: 0.1vw;
+    }
+
+    .text_content text:first-of-type {
+        font-size: 22px;
+        font-weight: 700;
+        text-align: left;
+        line-height: 1.8;
+    }
+    
+    .text_content text:nth-child(2) {
+        line-height: 1.5;
+    }
+    
+    .text_content text:nth-child(2),
+    .text_content text:last-of-type {
+        width: 361px;
+        font-family: "Helvetica Neue Cyr - Thin";
+        color: #363636;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .text_content text:last-of-type b {
+        vertical-align: top;
+        color: #92c47f;
+        font-size: 34px;
+    }
+    
+    .text_content img[src ="svg/Цветок.svg"] {
+        position: absolute;
+        transform: scale(2);
+        top: 23vh;
+        right: 0;
+        left: 7vw;
+    }
+
+    img[src ="svg/Right.svg"] {
+        position: relative;
+        transform: scale(0.7);
+        bottom: 18.5vh;
+        left: 8vw;
+    }
+
+    .woman {
+        position: relative;
+        transform: scale(0.6);
+        top: -5vh;
+        left: 6vw;
+        right: 0;
+        z-index: -1;
+    }
+
+    .shape {
+        position: absolute;
+        top: 39vh;
+        left: 20vw;
+        z-index: 1;
+    }
+    
+    .shape img {
+        cursor: pointer;
+        transform: scale(0.8);
+        border-radius: 10px;
+        background-color: #e4e4e3;
+        margin-right: 2px;
+    }
+}
+
+@media (max-width: 420px) {
+    .slide-wrapper {
+        position: relative;
+        width: 104vw;
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+    
+    #headerSlider.owl-carousel .owl-stage-outer {
+        overflow: visible;
+        height: 35vh;/***/
+    }
+
+    .content_important {
+        display: flex;
+        position: relative;
+        top: 0.5vh;/****/
+        left: 8vw;
+    }
+    
+    .content_important img {
+        position: absolute;
+        bottom: 21.5vh;
+        right: 65px;
+        transform: scale(0.4);
+    }
+    
+    img[src ="svg/Left.svg"] {
+        position: relative;
+        bottom: 4vh;
+        left: 2vw;
+    }
+
+    .text_content text:first-of-type {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+        line-height: 1.8;
+    }
+    
+    .text_content text:nth-child(2) {
+        line-height: 1.5;
+    }
+    
+    .text_content text:nth-child(2),
+    .text_content text:last-of-type {
+        width: 361px;
+        font-family: "Helvetica Neue Cyr - Thin";
+        color: #363636;
+        font-size: 7px;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .text_content text:last-of-type b {
+        vertical-align: top;
+        color: #92c47f;
+        font-size: 25px;
+    }
+    
+    .text_content img[src ="svg/Цветок.svg"] {
+        position: absolute;
+        top: 6vh;
+        right: 0;
+        left: -4vw;
+        transform: scale(0.8);
+    }
+
+    img[src ="svg/Right.svg"] {
+        position: relative;
+        bottom: 4vh;
+        left: -30vw;
+    }
+
+    .woman {
+        position: relative;
+        transform: scale(0.7);
+        top: 2vh;
+        left: 1vw;
+        right: 0;
+        z-index: -1;
+    }
+
+    .shape {
+        position: absolute;
+        top: 20vh;
+        left: 16vw;
+        z-index: 1;
+    }
+    
+    .shape img {
+        cursor: pointer;
+        transform: scale(0.6);
+        border-radius: 10px;
+        background-color: #e4e4e3;
+        margin-right: 0.5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .slide-wrapper {
+        position: relative;
+        width: 104vw;
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+    
+    #headerSlider.owl-carousel .owl-stage-outer {
+        overflow: visible;
+        height: 30vh;
+    }
+
+    .content_important {
+        display: flex;
+        position: relative;
+        top: -1.5vh;
+        left: 6vw;
+    }
+    
+    .content_important img {
+        position: absolute;
+        bottom: 21.5vh;
+        right: 65px;
+        transform: scale(0.25);
+    }
+    
+    img[src ="svg/Left.svg"] {
+        position: relative;
+        bottom: 1.5vh;
+        left: 4vw;
+    }
+
+    .text_content text:first-of-type {
+        font-size: 11px;
+        font-weight: 700;
+        text-align: left;
+        line-height: 1.8;
+    }
+    
+    .text_content text:nth-child(2) {
+        line-height: 1.5;
+    }
+    
+    .text_content text:nth-child(2),
+    .text_content text:last-of-type {
+        width: 361px;
+        font-family: "Helvetica Neue Cyr - Thin";
+        color: #363636;
+        font-size: 4px;
+        font-weight: 400;
+        text-align: left;
+    }
+    
+    .text_content text:last-of-type b {
+        vertical-align: top;
+        color: #92c47f;
+        font-size: 12px;
+    }
+    
+    .text_content img[src ="svg/Цветок.svg"] {
+        position: absolute;
+        top: 0.2vh;
+        right: 0;
+        left: -14vw;
+        transform: scale(0.6);
+    }
+
+    img[src ="svg/Right.svg"] {
+        position: relative;
+        bottom: 1.5vh;
+        left: -58vw;
+    }
+
+    .woman {
+        position: relative;
+        transform: scale(2);
+        top: 10vh;
+        left: -10vw;
+        right: 0;
+        z-index: -1;
+    }
+
+    .shape {
+        position: absolute;
+        top: 13.5vh;
+        left: 16vw;
+        z-index: 1;
+    }
+    
+    .shape img {
+        cursor: pointer;
+        transform: scale(0.4);
+        border-radius: 10px;
+        background-color: #e4e4e3;
+        margin-right: -5.5px;
+    }
+}
+/*FOOTER*/
+
+footer {
+    font-family: "Helvetica Neue Cyr - Thin";
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    bottom: 16vh;/*!!!*/
+}
+
+footer text:first-of-type {
+    line-height: 26px;
+    color: #363636;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+footer text:nth-child(2),
+footer text:nth-child(3),
+footer text:nth-child(4),
+footer text:last-of-type {
+    font-size: 14px;
+    color: #363636;
+    line-height: 26px;
+    letter-spacing: 0.7px;
+    text-align: center;
+}
+
+img[src ="svg/Flower_end.svg"] {
+    position: absolute;
+    left: 0;
+    top: -2vh;
+}
+
+@media (max-width: 1200px) {
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        bottom: 14vh;
+        padding: 0 4vw;
+    }
+
+    img[src ="svg/Flower_end.svg"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        bottom: 14vh;
+        padding: 0 5vw;
+    }
+
+    img[src ="svg/Flower_end.svg"] {
+        position: absolute;
+        left: 0;
+        top: 5vh;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        bottom: 8vh;
+        padding: 0 8vw;
+    }
+
+    img[src ="svg/Flower_end.svg"] {
+        position: absolute;
+        left: 0;
+        top: 4vh;
+    }
+}
+
+@media (max-width: 420px) {
+    footer text:first-of-type {
+        line-height: 26px;
+        color: #363636;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+    
+    footer text:nth-child(2),
+    footer text:nth-child(3),
+    footer text:nth-child(4),
+    footer text:last-of-type {
+        font-size: 10px;
+        color: #363636;
+        line-height: 26px;
+        letter-spacing: 0.7px;
+        text-align: center;
+    }
+    
+    img[src ="svg/Flower_end.svg"] {
+        position: absolute;
+        left: -8vw;
+        top: 27.5vh;
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 320px) {
+    img[src ="svg/Flower_end.svg"] {
+        position: absolute;
+        left: -8vw;
+        top: 32.5vh;
+        transform: scale(0.7);
+    }
+}
